@@ -105,11 +105,12 @@ public class DungleonClone {
     }
 
     public static void gameOver() {
-
+        System.out.println("GAME OVER! "); 
+        System.out.println("BETTER LUCK NEXT TIME ! " + score); 
     }
 
     public static void win() {
-
+        System.out.println("YOU DID IT! " + score); 
     }
 
     public static void check() {
