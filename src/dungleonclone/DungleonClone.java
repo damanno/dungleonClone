@@ -42,7 +42,7 @@ public class DungleonClone {
         //rnd void
         for (int i = 0; i < 5; i++) {
             if ("".equals(solution[i])) {
-                solution[i] = cards[(int) (Math .random() * (cards.length - 8)+8)];
+                solution[i] = cards[(int) (Math .random() * (cards.length))];
             }
         }
         for (int i = 0; i < 5; i++) {
