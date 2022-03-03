@@ -17,7 +17,7 @@ public class DungleonClone {
     public static String[] solution = {"", "", "", "", ""};
     public static String[][] answers;
     public static int mistakes = 6;
-    public static int attempts = 6;
+    public static int attempts = 0;
     public static int score = 0;
     public static boolean win = false;
 
@@ -123,10 +123,13 @@ public class DungleonClone {
         int repeat = 0;
         int winner = 0;
         for (int flag = 0; flag < solution.length; flag++) {
+            repeat = 0;
+            result = "";
             for (int i = 0; i < solution.length; i++) {
                 if (answers[attempts][flag].equals(solution[i])) {
                     repeat++;
                     if (flag == i) {
+                        repeat = 0;
                         winner++;
                         result = "*";
                         score += (100*(mistakes-attempts));
