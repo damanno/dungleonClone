@@ -1,5 +1,5 @@
 # dungleonClone
-Clone of a popular web game called Dungleon
+A command line clone of a popular web game called Dungleon
 
 Made just for studying purpose
 
